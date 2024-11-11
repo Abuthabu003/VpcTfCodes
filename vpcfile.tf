@@ -10,7 +10,7 @@ resource "aws_subnet" "pub-subnet" {
   availability_zone = "us-east-1a"
 
   tags = {
-    Name = "public-subnettt"
+    Name = "Web-Server"
   }
 }
 
@@ -21,7 +21,7 @@ resource "aws_subnet" "pvt-subnet" {
   availability_zone = "us-east-1c"
 
   tags = {
-    Name = "private-subnett"
+    Name = "App-Server"
   }
 }
 # Routing Table For Public
